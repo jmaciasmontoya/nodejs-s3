@@ -1,5 +1,7 @@
 const AWS = require('aws-sdk');
 
+// Deben ser datos de una cuenta personal/empresarial de AWS, 
+// las cuentas de laboratorio no funcionan, indican error de que no existe el Access Key ID
 const s3 = new AWS.S3({
     accessKeyId: "reemplaza KEYID",
     secretAccessKey: "reemplaza AccessKEY",
