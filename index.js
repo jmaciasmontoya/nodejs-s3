@@ -1,12 +1,13 @@
 const AWS = require('aws-sdk');
 
 const s3 = new AWS.S3({
-    accessKeyId: "ASIARXEN4ITRBRLD77QF",
-    secretAccessKey: "p03WOWmOphQEu0hXeyDtQf/4ivLbOrxS0BUGoUpf",
-    aws_session_token: "FwoGZXIvYXdzED8aDFYWpKWLGyun0fkmSSLLATvy6d+Nn0kPkv3OwbV4E51eofHfqS6Yo7VMj5ifcih4MDBnSkBo8vgXF9hKLrqfmqwr3WYOkh7Ezhan7G+zo0aeUJeoUiZcsdAdjkXtdJCqKebksZns57uDoczYCZ79r2ZLD2YdF3vAUK8+YGlPAUs2MPWyx1yoRTS/2AO8LcnMO2nj5bs4G7saLaL/q04LrobvQzViQETZ7N5lcm69+KnJzSvhdAFJobB02emeMKgsNzPKNLw8Uh51yAnG6DEUFaZ6QbsQsN1NaokBKIaKjaAGMi2U4XTlWFN4/UPf9AWNZuGeEF1Q3qkneUJlPfNiWdDynrKZcsRe8tYw00dIWDo=",
+    accessKeyId: "reemplaza KEYID",
+    secretAccessKey: "reemplaza AccessKEY",
+    aws_session_token: "",
 });
 
-const BUCKET_NAME = 'random-name-bucket-nodejs-test-0123'
+// Los nombres de los Buckets son unicos a nivel mundial
+const BUCKET_NAME = 'reemplaza-con-nombre-aleatorio'
 
 const createBucket = (bucketName) => {
     // Create the parameters for calling createBucket
